@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+.cover-hero-cater {
+  .heroImage(url("../img/hero-img/cater_hero.jpg"));
+}
+
+.cater-gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 15px;
+  margin: 0 1.5%;
+  padding-bottom: 50px;
+  .image-item-1 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    .image-img {
+      .galleryImg();
+    }
+  }
+  .image-item-2 {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    .image-img {
+      .galleryImg();
+    }
+  }
+  .image-item-3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 9;
+    .image-img {
+      .galleryImg();
+    }
+  }
+  .image-item-4 {
+    grid-column-start: 4;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 9;
+    .image-img {
+      .galleryImg();
+    }
+  }
+}

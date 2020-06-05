@@ -1,0 +1,133 @@
+//imported fonts
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+.cover-hero-menu {
+  .heroImage(url("../img/hero-img/menu_hero.jpg"));
+}
+
+.container {
+  button {
+    .goldHeaderFont(2.3rem);
+    text-align: center;
+    border: 1px solid @gold;
+    cursor: pointer;
+    &:hover {
+      color: @white;
+      background-color: @gold;
+    }
+  }
+  .image-item {
+    width: 100%;
+    border: 3px solid @gold;
+    border-radius: 10px;
+    margin: 5px;
+  }
+  h3 {
+    margin-bottom: 2px;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.2rem;
+    font-weight: 20;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .price {
+    .goldHeaderFont(3rem);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+
+//
+.menu-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 130px;
+  margin-bottom: 20px;
+}
+.warpper {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150px;
+}
+.tab {
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-top: 1px solid @gold;
+  border-right: 1px solid @gold;
+  border-left: 1px solid @gold;
+  padding:10px 40px;
+  margin:0px 2px;
+  background: @white ;
+  display:inline-block;
+  color: @gold;
+  border-radius:3px 3px 0px 0px;
+  box-shadow: 0 0.5rem 0.8rem #00000080;
+  &:hover{
+    background: @gold ;
+    color: @white;
+  }
+}
+.panels{
+  background:#fffffff6;
+  box-shadow: 0 2rem 2rem #00000080;
+  min-height:200px;
+  width:100%;
+  max-width:80%;
+  border-radius:3px;
+  overflow:hidden;
+  padding:20px;
+}
+.panel{
+  display:none;
+  animation: fadein .8s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.radio{
+  display:none;
+}
+#one:checked ~ .panels #steak-panel,
+#two:checked ~ .panels #seafood-panel,
+#three:checked ~ .panels #burgers-panel,
+#four:checked ~ .panels #pasta-panel,
+#five:checked ~ .panels #sushi-panel,
+#six:checked ~ .panels #dessert-panel{
+  display:block
+}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab,
+#four:checked ~ .tabs #four-tab,
+#five:checked ~ .tabs #five-tab,
+#six:checked ~ .tabs #six-tab{
+  background:#fffffff6;
+  color:#000;
+  border-top: 3px solid #000;
+}
+
+footer .careers ul {
+  margin: 0;
+  a {
+    text-decoration: none;
+  }
+}

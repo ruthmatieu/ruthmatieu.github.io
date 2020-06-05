@@ -1,0 +1,164 @@
+//imported fonts
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+#welcome {
+  padding: 0px 0px;
+  h1 {
+    .goldHeaderFont(5rem);
+    padding: 60px 0px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+
+  }
+  p {
+    .paragraph();
+    color: @gray;
+    text-align: center;
+    padding: 0 15%;
+    line-height: 32px;
+  }
+  .icon img {
+    width: 50px;
+    padding: 40px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 5% 5% 5%;
+  position: relative;
+  .column {
+    flex: 50%;
+    margin-right: 4%;
+    .left {
+    //   position: absolute;
+    //   top: 50%;
+    //   -ms-transform: translateY(-50%);
+    //   transform: translateY(-50%);
+      text-align: center;
+    }
+    .right {
+    //   position: absolute;
+    //   bottom: 50%;
+    //   -ms-transform: translateY(50%);
+    //   transform: translateY(50%);
+      text-align: center;
+    }
+    img {
+      width: 100%;
+    }
+    h2 {
+      .headerFont();
+      padding-bottom: 30px;
+    }
+    p {
+      .paragraph();
+      padding-bottom: 20px;
+    }
+  }
+}
+
+
+
+.column button {
+  .btn();
+}
+
+//products
+.products {
+  background-color: @lightgray;
+  padding: 3% 0 10% 0;
+  h3 {
+    .goldHeaderFont(4rem);
+    padding-bottom: 30px;
+  }
+  .products-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 5% 0.5% 5%;
+    .products-column {
+      flex: 33%;
+      margin-right: 2%;
+      img {
+        width: 100%;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.reservations {
+  padding-top: 5%;
+  h5 {
+    font: small-caps normal 2.5rem Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  p {
+    .paragraph();
+    font-size: 1.5rem;
+    color: @gray;
+    text-align: center;
+    padding: 0 15%;
+    line-height: 32px;
+  }
+  .center-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    button {
+      .btn();
+      align-items: center;
+    }
+  }
+}
+
+//JS styles
+// .fade-in {
+//   opacity: 0;
+//   transition: opacity 250ms ease-in;
+//   .appear {
+//     opacity: 1;
+//   }
+// }
+
+.slide-in {
+  opacity: 0;
+  transition: all 2s;
+}
+
+.align-right.slide-in {
+  transform: translateX(0%) scale(1);
+}
+
+.align-left.slide-in {
+  transform: translateX(0%) scale(1);
+}
+
+.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
