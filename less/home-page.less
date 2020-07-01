@@ -2,6 +2,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
+
+//media queries
+@media @mobile-device {
+  background-color: red;
+}
+
+@media @small-screen {
+  background-color: orange;
+}
+
+@media @medium-screen {
+  background-color: yellow;
+}
+
+@media @tablet-device {
+  background-color: green;
+}
+
+@media @desktop {
+  background-color: cyan;
+}
+
+@media @desktop-bigscreen {
+  background-color: purple;
+}
+
+@media @desktop-widescreen {
+  background-color: lightgray;
+}
+
+//homepage code
 #welcome {
   padding: 0px 0px;
   h1 {
@@ -9,7 +40,6 @@
     padding: 60px 0px;
     padding-top: 80px;
     padding-bottom: 30px;
-
   }
   p {
     .paragraph();
@@ -17,6 +47,9 @@
     text-align: center;
     padding: 0 15%;
     line-height: 32px;
+    @media @medium-screen {
+      padding: 0 5%;
+    }
   }
   .icon img {
     width: 50px;
@@ -32,9 +65,15 @@
   grid-template-columns: 1fr 1fr;
   margin: 0 5% 5% 5%;
   position: relative;
+  @media @medium-screen {
+    grid-template-columns: 1fr;
+  }
   .column {
     flex: 50%;
     margin-right: 4%;
+    @media @medium-screen {
+      flex: 100%;
+    }
     .left {
     //   position: absolute;
     //   top: 50%;
@@ -55,18 +94,39 @@
     h2 {
       .headerFont();
       padding-bottom: 30px;
+      @media @medium-screen {
+        margin-top: 10%;
+        padding-bottom: 10px;
+      }
     }
     p {
       .paragraph();
       padding-bottom: 20px;
+      @media @medium-screen {
+        padding: 0 5% 5% 5%;
+      }
     }
   }
 }
 
+.mobile-only {
+  display: none;
+  @media @medium-screen {
+    display: block;
+  }
+}
 
+.desktop-only {
+  @media @medium-screen {
+    display: none;
+  }
+}
 
 .column button {
   .btn();
+  @media @medium-screen {
+    margin-bottom: 5%;
+  }
 }
 
 //products
@@ -81,6 +141,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0 5% 0.5% 5%;
+    @media @medium-screen {
+      grid-template-columns: 1fr;
+    }
     .products-column {
       flex: 33%;
       margin-right: 2%;
