@@ -503,7 +503,7 @@ nav label {
   font-size: 35px;
   line-height: 70px;
   display: none;
-  width: 35px;
+  width: 15px;
   float: right;
 }
 @media (max-width: 960px), (max-device-width: 500px) {
