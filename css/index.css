@@ -45,12 +45,12 @@
   font-size: 1.7rem;
   color: gray;
   text-align: center;
-  padding: 0 15%;
+  padding: 0 20px;
   line-height: 32px;
 }
 @media (max-width: 960px), (max-device-width: 500px) {
   .info p {
-    padding-bottom: 20px;
+    padding-bottom: 15%;
   }
 }
 .button {
@@ -180,21 +180,21 @@
   font-size: 1.7rem;
   color: gray;
   text-align: center;
-  padding: 0 15%;
+  padding: 0 20px;
   line-height: 32px;
   display: inline-block;
   float: none;
 }
 @media (max-width: 960px), (max-device-width: 500px) {
   .rules h3 p {
-    padding-bottom: 20px;
+    padding-bottom: 15%;
   }
 }
 .rules .column p {
   font-family: 'Playfair Display', serif;
   font-size: 1.7rem;
   text-align: center;
-  padding: 0 15%;
+  padding: 0 20px;
   line-height: 32px;
   padding: 0px 60px;
   color: gray;
@@ -203,7 +203,7 @@
 }
 @media (max-width: 960px), (max-device-width: 500px) {
   .rules .column p {
-    padding-bottom: 20px;
+    padding-bottom: 15%;
   }
 }
 .cover-hero-menu {
@@ -703,6 +703,7 @@ footer .fa {
 #welcome p {
   font-family: 'Playfair Display', serif;
   font-size: 1.7rem;
+  padding: 0 20px;
   color: gray;
   text-align: center;
   padding: 0 15%;
@@ -710,7 +711,7 @@ footer .fa {
 }
 @media (max-width: 960px), (max-device-width: 500px) {
   #welcome p {
-    padding-bottom: 20px;
+    padding-bottom: 15%;
   }
 }
 @media (max-width: 768px), (max-width: 960px) {
@@ -784,13 +785,13 @@ footer .fa {
   font-size: 1.7rem;
   color: gray;
   text-align: center;
-  padding: 0 15%;
+  padding: 0 20px;
   line-height: 32px;
   padding-bottom: 20px;
 }
 @media (max-width: 960px), (max-device-width: 500px) {
   .row .column p {
-    padding-bottom: 20px;
+    padding-bottom: 15%;
   }
 }
 @media (max-width: 768px), (max-width: 960px) {
@@ -881,6 +882,7 @@ footer .fa {
 .reservations p {
   font-family: 'Playfair Display', serif;
   font-size: 1.7rem;
+  padding: 0 20px;
   font-size: 1.5rem;
   color: gray;
   text-align: center;
@@ -889,7 +891,7 @@ footer .fa {
 }
 @media (max-width: 960px), (max-device-width: 500px) {
   .reservations p {
-    padding-bottom: 20px;
+    padding-bottom: 15%;
   }
 }
 .reservations .center-btn {
