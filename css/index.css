@@ -181,7 +181,7 @@
 }
 @media (max-width: 960px), (max-device-width: 500px) {
   .rules h3 p {
-    padding-bottom: 10%;
+    padding-bottom: 5%;
   }
 }
 .rules .column p {
@@ -196,7 +196,7 @@
 }
 @media (max-width: 960px), (max-device-width: 500px) {
   .rules .column p {
-    padding-bottom: 10%;
+    padding-bottom: 5%;
   }
 }
 .cover-hero-menu {
