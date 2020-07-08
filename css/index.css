@@ -719,7 +719,7 @@ footer .fa {
 .row .column img {
   width: 100%;
 }
-@media (max-width: 768px), (max-width: 960px) {
+@media (max-width: 960px) {
   .row .column img {
     width: 70%;
     display: block;
