@@ -167,28 +167,28 @@
   font-family: 'Playfair Display', serif;
   font-size: 1.4rem;
   letter-spacing: 2px;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 .rules h3 p {
   font-family: 'Playfair Display', serif;
   font-size: 1.7rem;
   color: gray;
   text-align: center;
-  padding: 0 5%;
+  padding: 0 20px;
   line-height: 32px;
   display: inline-block;
   float: none;
 }
 @media (max-width: 960px), (max-device-width: 500px) {
   .rules h3 p {
-    padding-bottom: 20px;
+    padding-bottom: 10%;
   }
 }
 .rules .column p {
   font-family: 'Playfair Display', serif;
   font-size: 1.7rem;
   text-align: center;
-  padding: 0 5%;
+  padding: 0 20px;
   line-height: 32px;
   color: gray;
   line-height: 25px;
@@ -196,7 +196,7 @@
 }
 @media (max-width: 960px), (max-device-width: 500px) {
   .rules .column p {
-    padding-bottom: 20px;
+    padding-bottom: 10%;
   }
 }
 .cover-hero-menu {
