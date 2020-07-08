@@ -172,7 +172,7 @@
 }
 @media (max-width: 960px), (max-device-width: 500px) {
   .rules h3 p {
-    padding-bottom: 70px;
+    margin-bottom: 70px;
   }
 }
 .rules .column p {
