@@ -3,6 +3,9 @@
 
 .cover-hero-dining {
   .heroImage(url("../img/hero-img/dining_hero.jpg"));
+  @media @desktop, @mobile-device {
+    
+  }
 }
 
 .info {
@@ -90,6 +93,10 @@
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
   padding: 0 70px 150px 70px;
+  @media @desktop, @mobile-device {
+    grid-template-columns: 1fr;
+    padding: 0 70px 150px 70px;
+  }
   h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.4rem;
