@@ -170,11 +170,6 @@
   letter-spacing: 2px;
   padding-bottom: 30px;
 }
-@media (max-width: 960px), (max-device-width: 500px) {
-  .rules h3 {
-    grid-template-columns: 1fr;
-  }
-}
 .rules h3 p {
   font-family: 'Playfair Display', serif;
   font-size: 1.7rem;
