@@ -12,6 +12,9 @@
   text-align: center;
   h1 {
     .headFont();
+    @media @desktop, @mobile-device {
+      padding: 0 30px;
+    }
   }
   p {
     .paragraph();
@@ -33,7 +36,7 @@
   grid-gap: 15px;
   padding: 50px 150px 50px 150px;
   @media @desktop, @mobile-device {
-    padding: 50px 30px 50px 30px;
+    padding: 50px 20px;
   }
   .gallery-item-1 {
     grid-column-start: 1;
@@ -98,7 +101,7 @@
   padding: 0 70px 150px 70px;
   @media @desktop, @mobile-device {
     grid-template-columns: 1fr;
-    padding: 0 70px 150px 70px;
+    padding: 0 30px 150px 30px;
   }
   h3 {
     font-family: 'Playfair Display', serif;
