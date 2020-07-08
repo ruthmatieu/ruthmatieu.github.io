@@ -719,6 +719,11 @@ footer .fa {
 .row .column img {
   width: 100%;
 }
+@media (max-width: 768px), (max-width: 960px) {
+  .row .column img {
+    width: 70%;
+  }
+}
 .row .column h2 {
   font-size: 1.5rem;
   text-transform: uppercase;
