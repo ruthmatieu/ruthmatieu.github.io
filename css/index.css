@@ -48,6 +48,11 @@
   padding: 0 15%;
   line-height: 32px;
 }
+@media (max-width: 960px), (max-device-width: 500px) {
+  .info p {
+    padding-bottom: 20px;
+  }
+}
 .button {
   text-align: center;
   padding-top: 20px;
@@ -170,11 +175,6 @@
   letter-spacing: 2px;
   padding-bottom: 30px;
 }
-@media (max-width: 960px), (max-device-width: 500px) {
-  .rules h3 {
-    padding-bottom: 20px;
-  }
-}
 .rules h3 p {
   font-family: 'Playfair Display', serif;
   font-size: 1.7rem;
@@ -184,6 +184,11 @@
   line-height: 32px;
   display: inline-block;
   float: none;
+}
+@media (max-width: 960px), (max-device-width: 500px) {
+  .rules h3 p {
+    padding-bottom: 20px;
+  }
 }
 .rules .column p {
   font-family: 'Playfair Display', serif;
@@ -195,6 +200,11 @@
   color: gray;
   line-height: 25px;
   font-size: 16px;
+}
+@media (max-width: 960px), (max-device-width: 500px) {
+  .rules .column p {
+    padding-bottom: 20px;
+  }
 }
 .cover-hero-menu {
   background-image: url("../img/hero-img/menu_hero.jpg");
@@ -698,6 +708,11 @@ footer .fa {
   padding: 0 15%;
   line-height: 32px;
 }
+@media (max-width: 960px), (max-device-width: 500px) {
+  #welcome p {
+    padding-bottom: 20px;
+  }
+}
 @media (max-width: 768px), (max-width: 960px) {
   #welcome p {
     padding: 0 5%;
@@ -772,6 +787,11 @@ footer .fa {
   padding: 0 15%;
   line-height: 32px;
   padding-bottom: 20px;
+}
+@media (max-width: 960px), (max-device-width: 500px) {
+  .row .column p {
+    padding-bottom: 20px;
+  }
 }
 @media (max-width: 768px), (max-width: 960px) {
   .row .column p {
@@ -866,6 +886,11 @@ footer .fa {
   text-align: center;
   padding: 0 15%;
   line-height: 32px;
+}
+@media (max-width: 960px), (max-device-width: 500px) {
+  .reservations p {
+    padding-bottom: 20px;
+  }
 }
 .reservations .center-btn {
   display: flex;
