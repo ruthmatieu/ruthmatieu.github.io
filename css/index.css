@@ -168,7 +168,6 @@
 @media (max-width: 960px), (max-device-width: 500px) {
   .rules h3 {
     grid-template-columns: 1fr;
-    padding: 0 70px 150px 70px;
   }
 }
 .rules h3 p {
