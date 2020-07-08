@@ -170,6 +170,11 @@
   display: inline-block;
   float: none;
 }
+@media (max-width: 960px), (max-device-width: 500px) {
+  .rules h3 p {
+    padding-bottom: 70px;
+  }
+}
 .rules .column p {
   font-family: 'Playfair Display', serif;
   font-size: 1.7rem;
