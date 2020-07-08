@@ -802,7 +802,7 @@ footer .fa {
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0 5% 0.5% 5%;
 }
-@media (max-width: 768px), (max-width: 960px) {
+@media (max-width: 768px) {
   .products .products-row {
     grid-template-columns: 1fr;
   }
