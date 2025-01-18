@@ -2,7 +2,10 @@ import React from 'react';
 // import headshot from './assets/alanna-headshot.png';
 import './App.css';
 import { AiFillTwitterCircle, AiOutlineInstagram } from 'react-icons/ai';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaReact, FaDocker, FaAtlassian, FaHtml5, FaCss3Alt, FaFigma, FaGitAlt } from 'react-icons/fa';
+import { SiTypescript, SiStorybook } from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { VscAzureDevops } from "react-icons/vsc";
 import headshottwo from './assets/headshot-2.png';
 import { experience, projects, posts } from './Data/data';
 
@@ -213,7 +216,7 @@ function App() {
           </div>
         </div>
       </section>
-      {/* PROJECTS */}
+      {/* CASE STUDIES */}
       <section className="flex justify-center items-center text-center mt-10 md:mt-20 max-w-[800px] mx-auto">
         <div className="">
           <h3 className="mb-4 text-6xl md:text-7xl lg:text-7xl uppercase text-center font-extrabold">
@@ -226,7 +229,7 @@ function App() {
           <div className="md:grid grid-cols-2 gap-6">
             {projects.map((item) => (
               <div
-                className="group flex py-8 md:p-8 rounded-lg transition-colors duration-300"
+                className="group flex rounded-lg transition-colors duration-300"
                 key={item.id}
                 style={{ color: '#888D91' }}
               >
@@ -234,7 +237,7 @@ function App() {
                   href={item.link}
                   target="_blank"
                   rel="noreferrer"
-                  className="md:flex items-start md:flex-col"
+                  className="p-4 md:p-8 md:flex items-start md:flex-col group-hover:bg-blue-300 block rounded-lg group-transition-colors group-duration-300 group-hover:bg-opacity-5"
                 >
                   <div className="relative w-full h-auto">
                     {/* Image */}
@@ -244,7 +247,7 @@ function App() {
                       className="rounded w-full h-full object-cover"
                     />
                     {/* Overlay */}
-                    <div className="absolute inset-0 opacity-80 rounded transition-opacity duration-300 group-hover:opacity-0" style={{backgroundColor: pink}}></div>
+                    <div className="absolute inset-0 opacity-80 rounded transition-opacity duration-300 group-hover:opacity-0" style={{backgroundColor: orange}}></div>
                   </div>
                   <div className="md:text-left">
                     <div className="flex items-center">
@@ -322,14 +325,57 @@ function App() {
         </div>
         </div>
       </section>
-      <section className="flex justify-center items-center text-center mt-10 md:mt-20 max-w-[800px] mx-auto">
-      <h3 className="mb-4 text-6xl md:text-7xl lg:text-7xl uppercase text-center font-extrabold">
+      <section className="flex justify-center items-center text-center my-10 md:my-20 max-w-[800px] mx-auto">
+        <div>
+        <h3 className="mb-4 text-6xl md:text-7xl lg:text-7xl uppercase text-center font-extrabold">
             Tools
             <br />
             <span className="text-gray-600" style={{ color: '#3B393A' }}>
               used
             </span>
-          </h3>
+        </h3>
+        <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4'>
+          <div className=' bg-orange-600 p-4 max-w-16 rounded-lg' style={{backgroundColor: orange}}>
+            <FaReact size={32} />
+          </div>
+          <div className=' bg-orange-600 p-4 max-w-16 rounded-lg' style={{backgroundColor: orange}}>
+            <SiTypescript size={32} />
+          </div>
+          <div className=' bg-orange-600 p-4 max-w-16 rounded-lg' style={{backgroundColor: orange}}>
+            <RiTailwindCssFill size={32} />
+          </div>
+          <div className=' bg-orange-600 p-4 max-w-16 rounded-lg' style={{backgroundColor: orange}}>
+            <FaDocker size={32} />
+          </div>
+          <div className=' bg-orange-600 p-4 max-w-16 rounded-lg' style={{backgroundColor: orange}}>
+            <VscAzureDevops size={32} />
+          </div>
+          <div className=' bg-orange-600 p-4 max-w-16 rounded-lg' style={{backgroundColor: orange}}>
+            <FaAtlassian size={32} />
+          </div>
+          <div className=' bg-orange-600 p-4 max-w-16 rounded-lg' style={{backgroundColor: orange}}>
+            <SiStorybook size={32} />
+          </div>
+          <div className=' bg-orange-600 p-4 max-w-16 rounded-lg' style={{backgroundColor: orange}}>
+            <FaHtml5 size={32} />
+          </div>
+          <div className=' bg-orange-600 p-4 max-w-16 rounded-lg' style={{backgroundColor: orange}}>
+            <FaCss3Alt size={32} />
+          </div>
+          <div className=' bg-orange-600 p-4 max-w-16 rounded-lg' style={{backgroundColor: orange}}>
+            <FaFigma size={32} />
+          </div>
+          <div className=' bg-orange-600 p-4 max-w-16 rounded-lg' style={{backgroundColor: orange}}>
+            <FaGitAlt size={32} />
+          </div>
+          {/* <div className=' bg-orange-600 p-4 max-w-16 rounded-lg' style={{backgroundColor: orange}}>
+            <simorhing size={32} />
+          </div>
+          <div className=' bg-orange-600 p-4 max-w-16 rounded-lg' style={{backgroundColor: orange}}>
+            <simorhing size={32} />
+          </div> */}
+        </div>
+        </div>
       </section>
       {/* skills blog testimonials open source/thought leadership contact footer
       Option 4 (winner): */}
