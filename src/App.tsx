@@ -1,5 +1,6 @@
 import React from 'react';
 // import headshot from './assets/alanna-headshot.png';
+import './App.css';
 import { AiFillTwitterCircle, AiOutlineInstagram } from 'react-icons/ai';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import headshottwo from './assets/headshot-2.png';
@@ -16,11 +17,11 @@ function App() {
     <div className="">
       <section className="flex justify-center items-enter bg-white rounded-lg">
         {/* // do the background orbs from luxebyte here as well */}
-        <div className="relative grid place-items-center sm:pt-10 pb-10 md:pb-20">
+        <div className="relative grid place-items-center md:pt-10 pb-10 md:pb-20">
           <img
             src={headshottwo}
             alt="Alanna Matieu headshot"
-            className="rounded-full w-[250px] sm:w-[350px] z-10"
+            className="rounded-full w-[250px] sm:w-[350px] z-10 mt-20 md:mt-0"
           />
           <h1
             className="absolute font-bold uppercase z-0 drop-shadow-md"
@@ -46,10 +47,10 @@ function App() {
             web experiences with passion and precision.
           </h2>
           <ul className='flex space-x-8 mt-6'>
-            <li><a href="https://www.linkedin.com/in/ruthmatieu/" target="_blank" rel="noreferrer"><FaLinkedin className="text-teal-200 hover:text-blue-300" size={22}/></a></li>
-            <li><a href="https://github.com/ruthmatieu" target="_blank" rel="noreferrer"><FaGithub className="text-teal-200 hover:text-blue-300" size={22}/></a></li>
-            <li><a href="https://twitter.com/ruthmatieu" target="_blank" rel="noreferrer"><AiFillTwitterCircle className="text-teal-200 hover:text-blue-300" size={22}/></a></li>
-            <li><a href="https://www.instagram.com/alanna.code/" target="_blank" rel="noreferrer"><AiOutlineInstagram className="text-teal-200 hover:text-blue-300" size={22}/></a></li>
+            <li><a href="https://www.linkedin.com/in/ruthmatieu/" target="_blank" rel="noreferrer"><FaLinkedin className="social-hover" size={22}/></a></li>
+            <li><a href="https://github.com/ruthmatieu" target="_blank" rel="noreferrer"><FaGithub className="social-hover" size={22}/></a></li>
+            <li><a href="https://twitter.com/ruthmatieu" target="_blank" rel="noreferrer"><AiFillTwitterCircle className="social-hover" size={22}/></a></li>
+            <li><a href="https://www.instagram.com/alanna.code/" target="_blank" rel="noreferrer"><AiOutlineInstagram className="social-hover" size={22}/></a></li>
         </ul>
         </div>
       </section>
@@ -176,7 +177,7 @@ function App() {
                       ))}
                     </div>
                     <p className="text-xs flex space-x-2 mb-2">
-                      {item.techStack?.slice(0, 6).map((tech) => (
+                      {item.techStack?.slice(0, 5).map((tech) => (
                         <span
                           key={tech}
                           className="px-2 py-1 rounded-lg"
@@ -192,7 +193,7 @@ function App() {
                       ))}
                     </p>
                     <p className="text-xs flex space-x-2">
-                      {item.techStack?.slice(5, 9).map((tech) => (
+                      {item.techStack?.slice(4, 9).map((tech) => (
                         <span
                           key={tech}
                           className="px-2 py-1 rounded-lg"
@@ -298,7 +299,7 @@ function App() {
                         <div className="p-4 lg:p-8" style={{ color: "#888D91" }}>
                             <div className="flex items-center">
                                 <p
-                                  className="text-xl font-bold mb-1 group-hover:underline"
+                                  className="text-left text-xl font-bold mb-1 group-hover:underline"
                                   style={{ color: green }}>{post.title}</p>
                                 <svg 
                                     xmlns="http://www.w3.org/2000/svg" 
@@ -309,7 +310,7 @@ function App() {
                                 >
                                         <path 
                                             d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V12L17.206 8.207L11.2071 14.2071L9.79289 12.7929L15.792 6.793L12 3H21Z" 
-                                            fill="#FFF">
+                                            fill={orange}>
                                         </path>
                                 </svg>
                             </div>
