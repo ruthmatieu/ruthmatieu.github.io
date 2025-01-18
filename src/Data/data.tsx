@@ -4,26 +4,26 @@ import LacedUp from '../assets/lace-up.png';
 // import blach from "./assets"
 
 export const experience = [
-  {
-    id: 3,
-    role: 'Frontend Engineer',
-    company: 'Figma',
-    companyWebsite: 'https://www.figma.com/',
-    duration: '2025 - Present',
-    description:
-      'Deliver large scalable, data-intensive React projects used by millions through collaboration with cross-functional teams, including designers, developers, and stakeholders, to ensure seamless project execution from ideation to deployment.',
-    techStack: [
-      'React',
-      'TypeScript',
-      'JavaScript',
-      'Storybook',
-      'C#',
-      'SCSS',
-      'Tailwind',
-      'LESS',
-      'HTML',
-    ],
-  },
+  // {
+  //   id: 3,
+  //   role: 'Frontend Engineer',
+  //   company: 'Figma',
+  //   companyWebsite: 'https://www.figma.com/',
+  //   duration: '2025 - Present',
+  //   description:
+  //     'Deliver large scalable, data-intensive React projects used by millions through collaboration with cross-functional teams, including designers, developers, and stakeholders, to ensure seamless project execution from ideation to deployment.',
+  //   techStack: [
+  //     'React',
+  //     'TypeScript',
+  //     'JavaScript',
+  //     'Storybook',
+  //     'C#',
+  //     'SCSS',
+  //     'Tailwind',
+  //     'LESS',
+  //     'HTML',
+  //   ],
+  // },
   {
     id: 0,
     role: 'Frontend Engineer',

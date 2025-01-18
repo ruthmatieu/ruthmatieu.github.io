@@ -1,10 +1,12 @@
 import React from 'react';
 // import headshot from './assets/alanna-headshot.png';
+import { AiFillTwitterCircle, AiOutlineInstagram } from 'react-icons/ai';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import headshottwo from './assets/headshot-2.png';
-import { experience, projects } from './Data/data';
+import { experience, projects, posts } from './Data/data';
 
 function App() {
-  // const blue = '#0EA5E9';
+  const blue = '#0EA5E9';
   const pink = '#DB2777';
   const orange = '#FB923C';
   const green = '#14B8A6';
@@ -12,21 +14,22 @@ function App() {
 
   return (
     <div className="">
-      <section className="flex justify-center items-enter bg-white">
+      <section className="flex justify-center items-enter bg-white rounded-lg">
         {/* // do the background orbs from luxebyte here as well */}
-        <div className="relative grid place-items-center pt-10 pb-20">
+        <div className="relative grid place-items-center sm:pt-10 pb-10 md:pb-20">
           <img
             src={headshottwo}
             alt="Alanna Matieu headshot"
-            className="rounded-full w-[350px] z-10"
+            className="rounded-full w-[250px] sm:w-[350px] z-10"
           />
           <h1
-            className="absolute font-bold text-9xl uppercase text-gray-400 z-0 drop-shadow-md"
+            className="absolute font-bold uppercase z-0 drop-shadow-md"
             style={{
-              fontSize: 'clamp(5rem, 5vw, 9rem)',
+              fontSize: 'clamp(2rem, 5vw, 9rem)',
               top: '50%',
               left: '50%',
               transform: 'translate(-50%, -50%)',
+              color: pink,
             }}
           >
             ALANNA
@@ -34,20 +37,26 @@ function App() {
               MATIEU
             </span>
           </h1>
-          <h2 className="text-gray-800 mt-10 text-center text-xl font-semibold">
-            <span style={{ color: '#14B8A6' }} className="font-bold">
+          
+          <h2 className="text-gray-800 mt-10 text-center texy-lg md:text-xl font-semibold max-w-[450px] mx-4">
+            <span style={{ color: green }} className="font-bold">
               Frontend Engineer
             </span>{' '}
             building intuitive, high-performance
-            <br />
             web experiences with passion and precision.
           </h2>
+          <ul className='flex space-x-8 mt-6'>
+            <li><a href="https://www.linkedin.com/in/ruthmatieu/" target="_blank" rel="noreferrer"><FaLinkedin className="text-teal-200 hover:text-blue-300" size={22}/></a></li>
+            <li><a href="https://github.com/ruthmatieu" target="_blank" rel="noreferrer"><FaGithub className="text-teal-200 hover:text-blue-300" size={22}/></a></li>
+            <li><a href="https://twitter.com/ruthmatieu" target="_blank" rel="noreferrer"><AiFillTwitterCircle className="text-teal-200 hover:text-blue-300" size={22}/></a></li>
+            <li><a href="https://www.instagram.com/alanna.code/" target="_blank" rel="noreferrer"><AiOutlineInstagram className="text-teal-200 hover:text-blue-300" size={22}/></a></li>
+        </ul>
         </div>
       </section>
-      <section className="flex justify-center items-enter text-center mt-20">
+      <section className="flex justify-center items-enter text-center mt-10 md:mt-20">
         <div className="mb-10">
           {/* abut me section  */}
-          <h3 className="mb-4 text-8xl uppercase text-center font-extrabold">
+          <h3 className="mb-4 text-6xl md:text-7xl lg:text-7xl uppercase text-center font-extrabold">
             software
             <br />
             <span className="text-gray-600" style={{ color: '#3B393A' }}>
@@ -63,10 +72,10 @@ function App() {
           </p>
         </div>
       </section>
-      {/* stats: */}
-      <section className="flex justify-center items-center gap-14 text-center uppercase">
+      {/* STATISTICS */}
+      <section className="flex justify-center items-center gap-8 md:gap-14 text-center uppercase">
         <div className="font-bold" style={{ color: tan }}>
-          <span className="text-6xl" style={{ color: pink }}>
+          <span className="text-4xl md:text-5xl lg:text-6xl" style={{ color: pink }}>
             5+
           </span>
           <br />
@@ -75,7 +84,7 @@ function App() {
           experience
         </div>
         <div className="font-bold" style={{ color: tan }}>
-          <span className="text-6xl" style={{ color: pink }}>
+          <span className="text-4xl md:text-5xl lg:text-6xl" style={{ color: pink }}>
             50+
           </span>
           <br />
@@ -84,7 +93,7 @@ function App() {
           delivered
         </div>
         <div className="font-bold" style={{ color: tan }}>
-          <span className="text-6xl" style={{ color: pink }}>
+          <span className="text-4xl md:text-5xl lg:text-6xl" style={{ color: pink }}>
             1K+
           </span>
           <br />
@@ -93,9 +102,10 @@ function App() {
           code written
         </div>
       </section>
-      <section className="flex justify-center items-enter text-center mt-20 max-w-[800px] mx-auto">
+      {/* EXPERIENCE */}
+      <section className="flex justify-center items-enter text-center mt-10 md:mt-20 max-w-[800px] mx-auto">
         <div className="">
-          <h3 className="mb-4 text-8xl uppercase text-center font-extrabold">
+          <h3 className="mb-4 text-6xl md:text-7xl lg:text-7xl uppercase text-center font-extrabold">
             experience
           </h3>
           <div id="experience" className="">
@@ -111,10 +121,10 @@ function App() {
                     <div className="flex items-center">
                       <p
                         className="text-xl font-bold mb-1 group-hover:underline"
-                        style={{ color: pink }}
+                        style={{ color: green }}
                       >
                         {item.role} -{' '}
-                        <span style={{ color: pink }}>{item.company}</span>
+                        <span style={{ color: green }}>{item.company}</span>
                       </p>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -173,7 +183,7 @@ function App() {
                           style={{
                             // backgroundColor: '#3D5684',
                             // color: '#98FBFC',
-                            backgroundColor: green,
+                            backgroundColor: pink,
                             color: '#000',
                           }}
                         >
@@ -187,7 +197,7 @@ function App() {
                           key={tech}
                           className="px-2 py-1 rounded-lg"
                           style={{
-                            backgroundColor: green,
+                            backgroundColor: pink,
                             color: '#000',
                           }}
                         >
@@ -203,19 +213,19 @@ function App() {
         </div>
       </section>
       {/* PROJECTS */}
-      <section className="flex justify-center items-enter text-center mt-20 max-w-[800px] mx-auto">
-        <div className="mb-10">
-          <h3 className="mb-4 text-8xl uppercase text-center font-extrabold">
-            recent
+      <section className="flex justify-center items-center text-center mt-10 md:mt-20 max-w-[800px] mx-auto">
+        <div className="">
+          <h3 className="mb-4 text-6xl md:text-7xl lg:text-7xl uppercase text-center font-extrabold">
+            case
             <br />
             <span className="text-gray-600" style={{ color: '#3B393A' }}>
-              projects
+              studies
             </span>
           </h3>
-          <div className="grid grid-cols-2 gap-6">
+          <div className="md:grid grid-cols-2 gap-6">
             {projects.map((item) => (
               <div
-                className="group flex p-8 group-hover:bg-blue-300 rounded-lg transition-colors duration-300 hover:bg-opacity-5"
+                className="group flex py-8 md:p-8 rounded-lg transition-colors duration-300"
                 key={item.id}
                 style={{ color: '#888D91' }}
               >
@@ -223,18 +233,23 @@ function App() {
                   href={item.link}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-start md:flex-col"
+                  className="md:flex items-start md:flex-col"
                 >
-                  <img
-                    src={item.image}
-                    alt=""
-                    className="rounded w-32 h-16 md:w-full md:h-auto"
-                  />
-                  <div className="ml-4">
+                  <div className="relative w-full h-auto">
+                    {/* Image */}
+                    <img
+                      src={item.image}
+                      alt=""
+                      className="rounded w-full h-full object-cover"
+                    />
+                    {/* Overlay */}
+                    <div className="absolute inset-0 opacity-80 rounded transition-opacity duration-300 group-hover:opacity-0" style={{backgroundColor: pink}}></div>
+                  </div>
+                  <div className="md:text-left">
                     <div className="flex items-center">
                       <p
-                        className="group-hover:underline"
-                        style={{ color: '#98FBFC' }}
+                        className="group-hover:underline text-xl text-center md:text-left font-bold mt-3"
+                        style={{ color: green }}
                       >
                         {item.title}
                       </p>
@@ -243,15 +258,15 @@ function App() {
                         viewBox="0 0 24 24"
                         width="15"
                         height="15"
-                        className="ml-1"
+                        className="ml-1 -mb-3"
                       >
                         <path
                           d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V12L17.206 8.207L11.2071 14.2071L9.79289 12.7929L15.792 6.793L12 3H21Z"
-                          fill="#FFF"
+                          fill={orange}
                         ></path>
                       </svg>
                     </div>
-                    <p className="group-hover:text-gray-300">
+                    <p className="group-hover:text-gray-300 text-left">
                       {item.description}
                     </p>
                   </div>
@@ -261,9 +276,63 @@ function App() {
           </div>
         </div>
       </section>
-      skills blog testimonials open source/thought leadership contact footer
-      Option 4 (winner):
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
+      {/* BLOG SECTION */}
+      <section className="flex justify-center items-center text-center mt-10 md:mt-20 max-w-[800px] mx-auto">
+        <div>
+      <h3 className="mb-4 text-6xl md:text-7xl lg:text-7xl uppercase text-center font-extrabold">
+            blog
+            <br />
+            <span className="text-gray-600" style={{ color: '#3B393A' }}>
+              posts
+            </span>
+          </h3>
+          <div id="posts" style={{ color: "#98FBFC" }}>
+            {posts.map(post => (
+                <div key={post.id} className="group">
+                    <a
+                        href={post.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="group-hover:bg-blue-300 block rounded-lg group-transition-colors group-duration-300 group-hover:bg-opacity-5"
+                    >
+                        <div className="p-4 lg:p-8" style={{ color: "#888D91" }}>
+                            <div className="flex items-center">
+                                <p
+                                  className="text-xl font-bold mb-1 group-hover:underline"
+                                  style={{ color: green }}>{post.title}</p>
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    viewBox="0 0 24 24" 
+                                    width="15" 
+                                    height="15"
+                                    className="mb-1 ml-1"
+                                >
+                                        <path 
+                                            d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V12L17.206 8.207L11.2071 14.2071L9.79289 12.7929L15.792 6.793L12 3H21Z" 
+                                            fill="#FFF">
+                                        </path>
+                                </svg>
+                            </div>
+                            <p className="mt-2 text-left group-hover:text-gray-300">{post.description.slice(0,140)}...</p>
+                        </div>
+                    </a>
+                </div>
+            ))}
+        </div>
+        </div>
+      </section>
+      <section className="flex justify-center items-center text-center mt-10 md:mt-20 max-w-[800px] mx-auto">
+      <h3 className="mb-4 text-6xl md:text-7xl lg:text-7xl uppercase text-center font-extrabold">
+            Tools
+            <br />
+            <span className="text-gray-600" style={{ color: '#3B393A' }}>
+              used
+            </span>
+          </h3>
+      </section>
+      {/* skills blog testimonials open source/thought leadership contact footer
+      Option 4 (winner): */}
+      {/* <div style={{ display: 'flex', justifyContent: 'center' }}>
         <div
           style={{
             backgroundColor: '#0EA5E9',
@@ -300,11 +369,7 @@ function App() {
         >
           4
         </div>
-      </div>
-      {orange}
-      {green}
-      {pink}
-      {tan}
+      </div> */}
     </div>
   );
 }
