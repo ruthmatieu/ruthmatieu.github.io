@@ -38,10 +38,10 @@
 }
 
 .social-hover {
-  color: #FB923C; /* Default color */
-  transition: color 0.3s ease; /* Smooth transition */
+  color: #DB2777;
+  transition: color 0.3s ease; 
 }
 
 .social-hover:hover {
-  color: #cc5500; /* Darker orange on hover */
+  color: #cc5500;
 }
